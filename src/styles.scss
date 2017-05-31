@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('~https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+
+.wrapper {
+    span {
+        a {
+            margin-left: 16px;
+            display: inline-block;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+    max-width: 1280px;
+    margin: 12px auto;
+}
+
+.banner {
+    margin-bottom: 16px;
+}
+
+.input-form {
+    padding: 12px;
+    margin: 1% auto;
+    //background-color: ivory;
+}
+
+.ticket-box {
+    background-color: #ccc;
+    @include clearfix;
+}
+
+.ticket-card {
+    float: left;
+    width: 19%;
+    margin: 1%;
+    padding: 1%;
+
+}

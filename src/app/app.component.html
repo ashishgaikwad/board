@@ -1,4 +1,22 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<div>
+  <md-toolbar color="primary" class="banner">
+    BOARD
+    <span>
+      <a href="">Project</a>
+      <a href="">Sprints</a>
+      <a href="">Teams</a>
+    </span>
+  </md-toolbar>
+
+  <div class="input-form">
+    <md-card>
+      <app-input-form></app-input-form>
+    </md-card>
+  </div>
+  
+  <div class="ticket-box">
+    <app-ticketbox></app-ticketbox>
+  </div>
+
+</div>
+

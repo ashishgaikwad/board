@@ -1,0 +1,9 @@
+<md-card class="ticket-card" *ngFor="let hero of heroes">
+  <md-card-header>
+    <md-card-title> {{hero.name}}</md-card-title>
+  </md-card-header>
+  <img md-card-image src="https://unsplash.it/50/30">
+  <md-card-content>
+    {{hero.ego}}
+  </md-card-content>
+</md-card>

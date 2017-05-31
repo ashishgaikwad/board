@@ -1,0 +1,14 @@
+<form #heroForm="ngForm" (ngSubmit)="onSubmit()">
+    <div>
+      <md-input-container>
+        <input mdInput placeholder="Name" type="text" name="name" [(ngModel)]="name">
+      </md-input-container>
+    </div>
+    <div>
+      <md-input-container>
+        <input mdInput placeholder="Alter Ego" type="text" name="ego" [(ngModel)]="ego">
+      </md-input-container>
+    </div>
+
+    <button md-raised-button type="submit">Submit</button>
+</form>
