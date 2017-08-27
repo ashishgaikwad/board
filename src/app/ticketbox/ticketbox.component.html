@@ -1,9 +1,17 @@
-<md-card class="ticket-card" *ngFor="let hero of heroes">
+<md-card class="ticket-card" *ngFor="let ticket of tickets">
   <md-card-header>
-    <md-card-title> {{hero.name}}</md-card-title>
+    <md-card-title> 
+      <h4>{{ticket.title}}</h4>   
+    </md-card-title>
   </md-card-header>
-  <img md-card-image src="https://unsplash.it/50/30">
+  <!-- <img md-card-image src="https://unsplash.it/50/30"> -->
   <md-card-content>
-    {{hero.ego}}
+    <p> Desc:  {{ticket.description}}</p>
+    <p> Points:  {{ticket.points}}</p>
+    <p> Owner:  {{ticket.owner}}</p>
   </md-card-content>
+  <md-card-actions>
+    <button md-raised-button class="done">Update</button>
+    <button md-raised-button class="done">Done</button>
+  </md-card-actions>
 </md-card>

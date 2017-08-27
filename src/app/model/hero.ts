@@ -2,7 +2,6 @@ export class Hero {
 
     constructor(
         public name:string,
-        public ego:string){
-            return this;
-        }
+        public ego:string)
+        {}
 }

@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import url('~https://fonts.googleapis.com/icon?family=Material+Icons');
 
 @mixin clearfix {
@@ -12,13 +12,14 @@
 
 
 .wrapper {
-    span {
+    nav {
         a {
             margin-left: 16px;
             display: inline-block;
             font-size: 16px;
             text-decoration: none;
             color: white;
+            cursor: pointer;
         }
     }
     max-width: 1280px;
@@ -32,11 +33,10 @@
 .input-form {
     padding: 12px;
     margin: 1% auto;
-    //background-color: ivory;
 }
 
 .ticket-box {
-    background-color: #ccc;
+    background-color: #fafafa;
     @include clearfix;
 }
 
@@ -45,5 +45,10 @@
     width: 19%;
     margin: 1%;
     padding: 1%;
+
+    .done {
+        background-color: #4285f4;
+        color: white;
+    }
 
 }

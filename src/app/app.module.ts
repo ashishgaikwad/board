@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InputFormComponent } from './input-form/input-form.component';
 import { TicketboxComponent } from './ticketbox/ticketbox.component';
-import { HeroService } from './service/hero.service';
+import { TicketService } from './service/ticket.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { HeroService } from './service/hero.service';
     BrowserAnimationsModule,
     AppRoutingModule
   ],
-  providers: [HeroService],
+  providers: [TicketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

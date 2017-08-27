@@ -1,14 +1,24 @@
-<form #heroForm="ngForm" (ngSubmit)="onSubmit()">
-    <div>
-      <md-input-container>
-        <input mdInput placeholder="Name" type="text" name="name" [(ngModel)]="name">
-      </md-input-container>
-    </div>
-    <div>
-      <md-input-container>
-        <input mdInput placeholder="Alter Ego" type="text" name="ego" [(ngModel)]="ego">
-      </md-input-container>
-    </div>
+<form #ticketForm="ngForm" (ngSubmit)="onSubmit()">
+  <div>
+    <md-input-container>
+      <input mdInput placeholder="Title" type="text" name="title" ngModel>
+    </md-input-container>
+  </div>
+  <div>
+    <md-input-container>
+      <input mdInput placeholder="Description" type="text" name="description" ngModel>
+    </md-input-container>
+  </div>
+  <div>
+    <md-input-container>
+      <input mdInput placeholder="Points" type="text" name="points" ngModel>
+    </md-input-container>
+  </div>
+  <div>
+    <md-input-container>
+      <input mdInput placeholder="Owner" type="text" name="owner" ngModel>
+    </md-input-container>
+  </div>
 
-    <button md-raised-button type="submit">Submit</button>
+  <button md-raised-button type="submit">Submit</button>
 </form>

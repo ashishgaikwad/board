@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Hero } from '../model/hero';
-import { HeroService } from '../service/hero.service';
+import { Ticket } from '../model/ticket';
+import { TicketService } from '../service/ticket.service';
 
 @Component({
   selector: 'app-ticketbox',
@@ -9,12 +9,12 @@ import { HeroService } from '../service/hero.service';
 })
 export class TicketboxComponent implements OnInit {
 
-  heroes:Array<Hero>;
+  tickets:Array<Ticket>;
 
-  constructor(private heroService:HeroService) { }
+  constructor(private TicketService:TicketService) { }
 
   ngOnInit() {
-    this.heroes = this.heroService.heroes;
+    this.tickets = this.TicketService.tickets;
   }
 
 }
