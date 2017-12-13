@@ -1,24 +1,31 @@
 <form #ticketForm="ngForm" (ngSubmit)="onSubmit()">
   <div>
-    <md-input-container>
-      <input mdInput placeholder="Title" type="text" name="title" ngModel>
-    </md-input-container>
+    <mat-form-field>
+      <input matInput placeholder="Title" type="text" name="title" ngModel>
+    </mat-form-field>
   </div>
   <div>
-    <md-input-container>
-      <input mdInput placeholder="Description" type="text" name="description" ngModel>
-    </md-input-container>
+    <mat-form-field>
+      <input matInput placeholder="Description" type="text" name="description" ngModel>
+    </mat-form-field>
   </div>
   <div>
-    <md-input-container>
-      <input mdInput placeholder="Points" type="text" name="points" ngModel>
-    </md-input-container>
+    <mat-form-field>
+      <input matInput placeholder="Points" type="text" name="points" ngModel>
+    </mat-form-field>
   </div>
   <div>
-    <md-input-container>
-      <input mdInput placeholder="Owner" type="text" name="owner" ngModel>
-    </md-input-container>
+    <mat-form-field>
+      <input matInput placeholder="Owner" type="text" name="owner" ngModel>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-select #teamSelect placeholder="Team" multiple (selectionChange)="changeHandler($event)">
+        <mat-option *ngFor="let team of teamList" [value]="team">{{team}}</mat-option>
+      </mat-select>
+    </mat-form-field>
   </div>
 
-  <button md-raised-button type="submit">Submit</button>
+  <button mat-raised-button type="submit">Submit</button>
 </form>
